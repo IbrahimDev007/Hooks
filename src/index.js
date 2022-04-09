@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import Useref from "./component/userefs";
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// Componenet
+import Usestate from "./component/usestate";
+import Useffect from "./component/useeffect";
+import Contex from "./component/usecontex";
+import Reducerpro from "./component/usereducer";
+import Crud from "./component/Crud";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+	return (
+		<>
+			<Usestate />
+			<Useffect />
+			<Contex />
+			<Useref />
+			<Reducerpro />
+			<Crud />
+		</>
+	);
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
